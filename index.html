@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhuban- portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 32);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+      }
+      nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+       nav ul{
+       display: flex;
+       justify-content: center;
+      }
+       nav ul li{
+        list-style: none;
+        margin: 0 23px;
+      }
+       nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(152, 152, 250);
+        font-size: 1.03rem;
+      }
+      main hr{
+        border: 0;
+        background: yellowgreen;
+        height: 1.2px;
+        margin:40px 84px ;
+      }
+      .left{
+        font-size: 1.5rem;
+      }
+      .firstsection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0;
+      }
+      .firstsection > dev{
+        width: 30%;
+      }
+
+      .leftsection{
+        font-size: 2rem;
+      } 
+
+      .righttsection img{
+        width: 80%;
+      }
+      .purple{
+        color: blue;
+      }
+      #element{
+        color: blue;
+      }
+      .secondsection{
+        max-width: 80vw;
+        margin: auto;
+        height: 90vh;
+      }
+      .secondsection h1{
+        font-size: 1.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+    <nav>
+      <div class="left">Bhuban's portfolio</div>
+      <div class="right">
+        <ul>
+            <li><a href="/"> Home </a></li>
+            <li><a href="/"> About </a></li>
+            <li><a href="/"> SKil </a> </li>
+            <li><a href="/"> Contect Me</a> </li>
+            <li><a href="/"> Project</a> </li>
+         </ul>
+      </div>
+    </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi My Name is <span class="purple">Bhuban Chetry</span>
+          <div>B-tech undergraduate student</div><div>I have deep interest in</div>
+          <span id="element"></span>
+        </div>
+        <div class="righttsection">
+          <img src="BHUBAN VCR.jpg" alt="">
+        </div>
+       </section>
+       <hr>
+       <section class="secondsection">
+        <h1>past Experience</h1> 
+       </section>
+       </main>
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+       <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Artificial Intelligence.', 'Web Dev.','EDC.',' Cyber Security .'],
+      typeSpeed: 50,
+    });
+  </script>
+  </body>
+</html>
